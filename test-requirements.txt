@@ -1,7 +1,7 @@
 -r mypy-requirements.txt
 -r build-requirements.txt
 attrs>=18.0
-black==23.3.0  # must match version in .pre-commit-config.yaml
+black==24.3.0  # must match version in .pre-commit-config.yaml
 filelock>=3.3.0
 flake8==6.0.0; python_version >= "3.8"           # must match version in .pre-commit-config.yaml
 flake8-bugbear==23.3.23; python_version >= "3.8" # must match version in .pre-commit-config.yaml
@@ -18,3 +18,4 @@ py>=1.5.2
 setuptools>=65.5.1
 six
 tomli>=1.1.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
